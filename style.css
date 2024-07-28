@@ -1,7 +1,7 @@
 
 
 body{
-    background-color: #CDE8E5;
+    background-color: white;
     margin: 0 0 0 10%;
 }
 a{
@@ -90,6 +90,7 @@ li a:hover img{
 
 .Home{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -98,6 +99,8 @@ li a:hover img{
 }
 .Home > img{
     border: 1.5px solid rgba(0, 0, 0, 0.497);
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     justify-self: left;
     transition: transform 1s ease;
@@ -109,29 +112,30 @@ li a:hover img{
     font-size: 3rem;
 }
 .Home p{
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.7rem;
     margin-bottom: 50px;
-    width: 350px;
+    text-align: center;
+
 }
-.Home button{
+ .Home .button{
     border: 0;
-    border-radius: 5px;
-    background-color: #274c71;
-    margin-right: 0.37rem;
-    color: #EEF7FF;
+    border-radius: 15px;
+    background-color: transparent;
+    margin-top: 5vh;
+    color: #4D869C;
+    border: 1px solid #4D869C;
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
     height: 2rem;
-    width: 10rem;
-    transition: background-color 0.5s ease;
+    width: 25rem;
+    transition: background-color 0.5s ease, color 0.5s ease ;
 
 }
 .Home button:hover{
-    background-color: #265a73e6;
-
-
+    background-color: #4D869C;
+    color: white;
 }
 
 
