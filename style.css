@@ -2,14 +2,14 @@
 
 body{
     background-color: white;
-    margin: 0 0 0 10%;
+    margin: 0 0 0 12%;
 }
 a{
     cursor: pointer;
     text-decoration: none;
 }
 button{
-    cursor: pointer;
+    cursor: pointer!important;
 }
 .navbar{
     position: fixed;
@@ -17,7 +17,7 @@ button{
     left: 0;
     width: 12%;
     min-width: 150px;
-    height: 100vh;
+    height: 500vh;
     background-color: #4D869C;
 }
 nav{
@@ -105,6 +105,10 @@ li a:hover img{
     justify-self: left;
     transition: transform 1s ease;
 }
+.Home > img:hover{
+    box-shadow: 1px 2px 5px hsla(0, 0%, 0%, 0.387), -1px -2px 5px hsla(0, 0%, 0%, 0.387);
+    transform: scale(1.01);
+}
 .Home div{
     margin-left: 50px;
 }
@@ -158,23 +162,214 @@ li a:hover img{
     /* border: 1px solid #EEF7FF; */
     border-radius: 10px;
     margin: auto;
+    transition: background-color 0.7s ease;
 }
  .media-div a:hover{
     background-color: #7ab2b230;
-    transition: background-color 0.7s ease;
+    
 }
  .social-media{
     width: 25px;
     height: 25px;
 }
-.Home > img:hover{
-    box-shadow: 1px 2px 5px hsla(0, 0%, 0%, 0.387), -1px -2px 5px hsla(0, 0%, 0%, 0.387);
-    transform: scale(1.01);
-}
 
 .list{
     visibility: hidden;
 }
+
+
+
+.About{
+    background-color: #CDE8E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 100vh;
+}
+
+.About > img{
+    height: 540px;
+    width: 423px;
+    border-radius: 10px;
+    justify-self: left;
+    filter: grayscale(30%) contrast(110%);
+    transition: transform 1s ease, box-shadow 0.5s ease;
+
+}
+.About img:hover{
+    box-shadow: 1px 2px 5px hsla(0, 0%, 0%, 0.387), -1px -2px 5px hsla(0, 0%, 0%, 0.387);
+    transform: scale(1.003);
+}
+
+.About div{
+    width: 50%;
+    height: 540px;
+}
+
+.About h1{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: #256527;
+}
+
+.About p{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-bottom: 50px;
+}
+
+.About table{
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.About table th, td{
+    height: 2rem;
+    padding: 0 50px 0 0;
+}
+
+#myname{
+    text-align: right;
+    color: #0b2d0c;
+}
+
+.About h2{
+    color: rgb(125, 125, 35);
+}
+
+#myname span{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.Projects{
+    /* background-color: #CDE8E5; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 100vh;
+    padding: 0 50px;
+
+}
+
+.Projects .project-grid{
+    display: grid;
+    height: 80vh;
+    width: 100%;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    gap: 50px;
+}
+
+.Projects .project{
+    position: relative;
+    background-color: #012e40;
+    border-radius: 20px;
+    background-size: cover;
+    transition: background-color 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Projects .project:hover{
+    background-color: #042a39;
+}
+
+.Projects .project h1{
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    color: white;
+}
+
+.Projects .project:hover h1{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Projects .project p{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.Projects .project:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.Projects .project .visit.button{
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease, background-color 0.5s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #a712ec;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    height: 2rem;
+    width: 50%;
+    
+
+}
+
+.Projects .project:hover .visit.button{
+    opacity: 1;
+    visibility: visible;
+}
+
+.Projects .project:hover .visit.button:hover{
+    background-color: #a712ec;
+}
+
+
+
+
+
+.Projects .project img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+}
+
+
+.Projects .project:hover img{
+    opacity: 0;
+}
+
+
+
+
 
 
 
@@ -187,6 +382,14 @@ li a:hover img{
         justify-self: center;
         width: 250px;
         height: 250px;
+    }
+    .Projects{
+        height: 100vh;
+    }
+    .project-grid{
+        grid-template-columns: repeat(2, 1fr)!important;
+        grid-template-rows: repeat(3, 1fr)!important;
+
     }
 }
 @media(max-width: 950px){
@@ -236,6 +439,20 @@ li a:hover img{
         width: 100%!important;
         height: 7vh!important;
         margin-bottom: 10px;
+    }
+
+    .About{
+        flex-direction: column;
+    }
+    .About > img{
+        height: 432px;
+        width: 338.4px;
+
+    }
+    .project-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr)!important;
+
     }
 }
 
