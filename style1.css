@@ -1,0 +1,636 @@
+*{
+    box-sizing: border-box!important;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F2EFE5;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    /* position: fixed;
+    z-index: 1; */
+    width: 100%;
+    background-color: #E3E1D9;
+}
+nav p{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s ease;
+}
+nav a:hover p{
+    margin-bottom: 0;
+    visibility: visible;
+    position: relative;
+    opacity: 1;
+}
+
+.media-div{
+    position: relative;
+    top: 40px;
+    display: flex;
+    gap: 20%;
+    width: 100%
+    
+}
+ .media-div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: background-color 0.7s ease;
+}
+ .media-div a:hover{
+    background-color: #7a787a30;
+    
+}
+ .social-media{
+    width: 25px;
+    height: 25px;
+}
+
+.Home h1 span{
+    color: #8b1780;
+}
+
+.visit.button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #a712ec;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    height: 2rem;
+    width: 50%;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.visit.button:hover{
+    background-color: #a712ec;
+    color: white;
+}
+
+#se{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#se.fade-in {
+    opacity: 1;
+}
+
+.container.text-center > .row > div{
+    height: 40vh;
+}
+
+.About{
+    padding-top: 0!important;
+}
+
+.About h1{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#myname{
+    color: #0b2d0c;
+    font-size: 1.5rem;
+    margin: 0 0 50px;
+    text-align: right;
+}
+
+#myname span{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.About button{
+    width: 40%;
+    min-width: fit-content;
+    border-radius: 0;
+}
+
+#carouselExampleIndicators img{
+    height: 60vh!important;
+}
+
+
+.Projects .project{
+    position: relative;
+    background-color: #042a39e8;
+    border-radius: 20px;
+    transition: background-color 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    width: 100%;
+    height: 35vh;
+
+}
+
+.Projects .project:hover{
+    background-color: #042a39;
+}
+
+.Projects .project h1{
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    color: white;
+    user-select: none; 
+
+    -webkit-touch-callout:none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Projects .project:hover h1{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Projects .project p{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    user-select: none; 
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Projects .project:hover p{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.Projects .project .visit.button{
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease, background-color 0.5s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #a712ec;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    height: 2rem;
+    width: 50%;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+
+}
+
+.Projects .project:hover .visit.button{
+    opacity: 1;
+    visibility: visible;
+}
+
+.Projects .project:hover .visit.button:hover{
+    background-color: #a712ec;
+}
+
+.Projects .project img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+    
+}
+
+
+.Projects .project:hover img{
+    opacity: 0;
+}
+
+.Projects h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.Resume .container{
+    position: relative;
+    padding-left: 5.2rem;
+}
+
+.Resume .navbar{
+    margin: 5vh 0;
+
+    position: absolute;
+    height: 75vh;
+    left: 0;
+}
+
+.Resume .navbar .active{
+    color: #012e40;
+}
+
+.Resume ul{
+    gap: 13vh;
+    margin-bottom: 0;
+}
+.Resume a{
+    border: 0!important;
+    border-radius: 15px!important;
+}
+.Resume a:hover{
+    background-color: rgba(52, 51, 51, 0.039);
+}
+.Resume svg{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+.Resume .col.content{
+    padding: 0;
+}
+.content-section {
+    margin: 5vh 0;
+    padding: 5%!important;
+    display: none;
+    height: 75vh;
+    background-color: white;
+    overflow: auto;
+}
+.content-section.active {
+    display: block;
+}
+.content-section h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.Resume .space{
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.397), -1px -2px 10px rgba(0, 0, 0, 0.397);
+    z-index: 1;
+    position: relative;
+}
+#myimg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.Resume .space .flexdiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+}
+
+.Resume .space .flexdiv > div{
+    height: 25vh;
+}
+.Resume .space h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.Resume .space svg{
+    color: white;
+}
+#projects > div{
+    display: flex!important;
+    gap: 5%;
+
+}
+#projects > div > p{
+    color: #042a39!important;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+#projects p{
+    color: rgb(159, 159, 159);
+}
+#projects hr{
+    margin-top: 6vh;
+}
+.content-section h2{
+    font-weight: bold;
+}
+.Resume .features{
+    justify-content: space-between;
+}
+.Resume .features > div{
+    width: 45%;
+}
+.Resume .features svg{
+    height: 40px;
+    width: 40px;
+}
+.Resume .city{
+    color: rgb(189, 189, 189);
+    font-weight: 250;
+}
+.Resume .city span{
+    margin-left: 10%;
+}
+#education h3{
+    margin: 0!important;
+}
+#education hr{
+    margin-bottom: 2.2vh;
+}
+#education .unis{
+    border-bottom: 1px solid rgba(81, 78, 78, 0.222);
+    margin-bottom: 2.2vh;
+}
+
+#education .container{
+    width: 100%;
+    margin-left: -40px;
+}
+
+#education .container .row > div{
+    margin-bottom: 5vh;
+}
+
+
+#education .container .certificate{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#education .container .certificate:hover{
+    background-color: #012e40;
+}
+#education .container .certificate:hover img{
+    opacity: 0;
+}
+
+
+
+#education .container img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#education .container .certificate h1{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+
+    user-select: none; 
+    -webkit-touch-callout:none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+#education .container .certificate p{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+
+    margin: 0 20px!important;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+
+    user-select: none; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#education .container .certificate:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+#skills h2{
+    margin-bottom: 30px;
+}
+
+
+#skills .proglangs{
+    display: flex!important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+#skills .proglangs p{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+#skills .proglangs div{
+    margin-bottom: 30px;
+    width: 96px;
+    height: 96px;
+}
+
+#skills .proglangs img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.langs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.lang{
+    width: 168px;
+}
+
+.lang p{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.lang img{
+    display: inline-block;
+    width: 100%;
+    height:96px;
+}
+
+
+
+
+
+
+
+
+
+form{
+    margin-left: 5%;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.361), -1px -3px 10px rgba(0, 0, 0, 0.361);
+    padding: 10px;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid rgba(136, 134, 134, 0.3);
+    background-color: rgba(237, 235, 235, 0.195);
+    padding:  5px;
+    border-radius: 5px;
+}
+
+form textarea{
+    resize: none;
+}
+
+form .input-div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form .name.input-div{
+    display: inline-flex;
+    width: 49%;
+}
+
+form #submit{
+    width: 30%;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    background-color: #a712ec;
+    color: white;
+}
+
+@media (max-width: 1400px){
+    #education .container .certificate{
+        height: 260px;
+    }
+}
+@media (max-width: 1200px){
+    #education .container .certificate{
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px){
+    #dropdown{
+        position: relative;
+        bottom: 25px;
+    }
+    #softimg{
+        margin: auto;
+    }
+    .Home h1{
+        text-align: center;
+    }
+    .About button{
+        margin: 0 auto;
+    }
+    #education .container .certificate{
+        height: 350px;
+    }
+
+}
+
+@media (max-width: 768px){
+    .visit.button{
+        width: 100%;
+    }
+    #education .container .certificate{
+        height: 500px;
+    }
+}
+
+@media (max-width: 575px) {
+    .Resume .features > div{
+        width: 100%;
+    }
+
+    #education .container .certificate{
+        width: auto;
+        height: auto;
+    }
+    #education .container{
+        margin-left: -80px;
+        margin-right: -20px;
+    }
+}
+

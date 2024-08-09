@@ -3,196 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Farhad Rahimov Portfolio</title>
+    <title>Resume</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <button class="list" ontouchstart=""><img src="./images/list.svg" alt="" width="32px" height="32px"></button>
-    <div class="navbar">
-        <nav>
-            <li id="logoli">
-                <img src="./images/myImage.png" alt="My Image"  width="70px" height="70px">
-                <p>Farhad Rahimov</p>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./images/house.svg" alt="home icon">
-                    <p>Home</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./images/person-circle.svg" alt="about me icon">
-                    <p>About Me</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./images/person-workspace.svg" alt="works icon">
-                    <p>Projects</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./images/clipboard-check.svg" alt="resume icon">
-                    <p>Resume</p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="./images/telephone.svg" alt="telephone icon">
-                    <p>Contact</p>
-                </a>
-            </li>
-                
-
-                <div class="media-div">
-                    <a href="">
-                        <img src="./images/facebook.svg" alt="facebook icon" class="social-media">
+<div class="container-fluid">
+    <div class="row">
+        <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 4.5rem;">
+            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link py-3 border-bottom rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home" data-target="projects">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                        </svg>
                     </a>
-                    <a href="">
-                        <img src="./images/instagram.svg" alt="instagram icon" class="social-media">
+                </li>
+                <li>
+                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard" data-target="education">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                            <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                            <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                        </svg>
                     </a>
-                    <a href="">
-                        <img src="./images/linkedin.svg" alt="linkedin icon" class="social-media">
-        
+                </li>
+                <li>
+                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders" data-target="experience">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                        </svg>        
                     </a>
-                    <a href="">
-                        <img src="./images/github.svg" alt="github icon" class="social-media">
-        
+                </li>
+                <li>
+                    <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Products" data-bs-original-title="Products" data-target="projects">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                        </svg>        
                     </a>
-                </div>
-                <p>© 2024 Baku AZE. <br>
-                    All rights reserved.
-                </p>
-            
-        </nav>
+                </li>
+            </ul>
+        </div>
+        <div class="col content">
+            <div id="projects" class="content-section active">
+                <h1>Projects</h1>
+                <p>Details about projects...</p>
+            </div>
+            <div id="education" class="content-section">
+                <h1>Education</h1>
+                <p>Details about education...</p>
+            </div>
+            <div id="experience" class="content-section">
+                <h1>Experience</h1>
+                <p>Details about experience...</p>
+            </div>
+        </div>
     </div>
+</div>
 
-    
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('.content-section');
 
-    <section class="Home">
-        
-        
-        <div>
-            <h1>Hi, I am <span>Farhad Rahimov</span> <br> I am a <br> <span>Software Engineer</span></h1>
-            <button class="contact button">Contact Me</button>
-            
-            
-            
-        </div>
-        <img src="./images/softwareengineer.png" alt="My Image" width="350px" height="350px" >
-        
-        
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = link.getAttribute('data-target');
 
-        
-        
-        
-    </section>
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
 
-    <section class="About">
-        <img src="./images/me.png" alt="My Image">
-
-        <div>
-            <h2>Who Am I?</h2>
-            <h1>I Don't Develop Web Pages, I Develop Systems</h1>
-            <p>My name is Rahimov Farhad, an 18 years old <a href="">Azerbaijan</a>ian.
-                I am a first-year Computer Science student at the <a href="">University of Leeds</a>. 
-                I am passionate about Computer Science and Software Engineering. </p>
-       
-                <!-- <hr>
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <td>Farhad Rahimov</td>
-
-                        <th>Mail</th>
-                        <td>Farhad.r2006@mail.ru</tr>
-                    </tr>
-
-                    <tr>
-                        <th>Age</th>
-                        <td>18</td>
-
-                        <th>Location</th>
-                        <td>Baku, Azerbaijan</tr>
-                    </tr>
-
-                    <tr>
-                        <th>Speciality</th>
-                        <td>Software Engineer</td>
-
-                        <th>Nationality</th>
-                        <td>Azerbaijanian</tr>
-                    </tr>
-                    
-                
-                </table>
-                <hr> -->
-
-            <p>I can create Full Stack Websites and Web Applications from scratch.</p>
-
-            <p>Currently I live in Baku, Azerbaijan. Contact me via <a href="">e-mail</a>.</p>
-                <h2 id="myname">Farhad Rahimov <span>Software Engineer, Univeristy of Leeds</span></h2>
-         </div>
-
-        
-    </section>
-
-    <section class="Projects">
-        <h1>My Recent Projects</h1>
-
-        <div class="project-grid">
-            <div class="project"> 
-                <img src="./images/library.jpg" alt="">
-                <h1>Library Management System</h1>
-                <p>A desktop application 
-                    of the Library Management System using Java Language
-                    </p>
-                <a class="visit button" href=""> Visit Repository </a>
-            </div>
-            <div class="project">
-                <img src="./images/blog.webp" alt="">
-                <h1>Blog Web Application</h1>
-                <p>A desktop application 
-                    of the Library Management System using Java Language</p>
-                <a class="visit button" href=""> Visit Repository </a>
-            </div>
-            <div class="project">
-                <img src="./images/todolist.webp" alt="">
-                <h1>To Do List</h1>
-                <p>A desktop application 
-                    of the Library Management System using Java Language</p>
-                <a class="visit button" href=""> Visit Repository </a>
-            </div>
-            <div class="project">
-                <img src="./images/dice.webp" alt="">
-                <h1>The Dice Game</h1>
-                <p>A desktop application 
-                    of the Library Management System using Java Language</p>
-                <a class="visit button" href=""> Visit Repository </a>
-            </div>
-            
-            <div class="project">
-                <img src="./images/booknotes.jpg" alt="">
-                <h1>Book Notes</h1>
-                <p>A desktop application 
-                    of the Library Management System using Java Language</p>
-                <a class="visit button" href=""> Visit Repository </a>
-            </div>
-            <div class="project">
-                <img src="./images/yahtzee.webp" alt="">
-                <h1>The Yahtzee Game</h1>
-                <p>A desktop application 
-                    of the Library Management System using Java Language</p>
-                <a class="visit button" href=""> Visit Repository </a>
-            </div>
-        </div>
-    </section>
-
-    
-
-   
-    
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
