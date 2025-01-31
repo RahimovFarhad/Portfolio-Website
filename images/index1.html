@@ -96,7 +96,12 @@
         </div>
       </div>
     </div>
+    <div class="scroll-progress-bar">
+      <div class="scroll-progress-progress-indicator-bar" style="width: 0px;">
+      </div>
+    </div>
   </nav> 
+
 
    <section class="Home">
     <div class="container col-xxl-8 px-4 py-5">
@@ -638,12 +643,11 @@
             textElement.textContent = texts[currentIndex];
             textElement.classList.add('fade-in');
             currentIndex = (currentIndex + 1) % texts.length;
-        }, 500); // Match the timing with CSS transition duration
+        }, 500); 
     }
 
     setInterval(changeText, 3000); // Change text every 3 seconds
 
-    // Initial text fade-in
     textElement.classList.add('fade-in');
 
 
@@ -667,5 +671,7 @@
     });
 
   </script> 
+
+  <script src="index.js"></script>
 </body>
 </html>
